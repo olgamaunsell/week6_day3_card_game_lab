@@ -29,7 +29,7 @@ public class DealerTest {
 
     @Test
 
-    public void dealCardTo_Player(){
+    public void canRemoveCardFromHand(){
         dealer.getCard();
         dealer.dealCard();
         assertEquals(0, dealer.cardsInHandCount());
