@@ -27,5 +27,12 @@ public class DeckTest {
         assertEquals(52, deck.getNumberOfCards());
     }
 
+    @Test
+
+    public void canRemoveCard(){
+        deck.populateDeck();
+        deck.removeCard();
+        assertEquals(51, deck.getNumberOfCards());
+    }
 
 }
