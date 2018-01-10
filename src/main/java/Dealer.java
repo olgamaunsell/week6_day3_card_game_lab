@@ -15,8 +15,11 @@ public class Dealer {
         hand.add(this.deck.removeCard());
     }
 
-    public void dealCard() {
+    public int cardsInHandCount(){
+        return this.hand.size();
+    }
 
-
+    public Card dealCard() {
+        return this.hand.remove(0);
     }
 }
