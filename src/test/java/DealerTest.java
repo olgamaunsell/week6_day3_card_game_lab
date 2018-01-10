@@ -16,26 +16,19 @@ public class DealerTest {
 
         deck = new Deck();
         deck.populateDeck();
-        player = new Player();
+        player = new Player("Olga");
         dealer = new Dealer(deck);
 
     }
 
-    @Test
-    public void canGetCard(){
-        dealer.getCard();
-        assertEquals(51, deck.getNumberOfCards());
-    }
-
-    @Test
-
-    public void canRemoveCardFromHand(){
-        dealer.getCard();
-        dealer.dealCard();
-        assertEquals(0, dealer.cardsInHandCount());
-
-    }
-
+//    @Test
+//
+//    public void canDealCardToPlayer(){
+//        dealer.dealCard();
+//        assertEquals(51, deck.getNumberOfCards());
+//        assertEquals(1, player.cardCount());
+//
+//    }
 
 
 }
