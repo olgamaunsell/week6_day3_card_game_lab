@@ -13,14 +13,14 @@ public enum Rank {
     QUEEN(12),
     KING(13);
 
-    private final int pointValue;
+    private final int pointsValue;
 
-    Rank(int pointValue){
-        this.pointValue = pointValue;
+    Rank(int pointsValue){
+        this.pointsValue = pointsValue;
 
     }
 
-    public int getPointValue(){
-        return this.pointValue;
+    public int getPointsValue(){
+        return this.pointsValue;
     }
 }

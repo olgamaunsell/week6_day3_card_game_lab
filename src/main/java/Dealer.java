@@ -2,24 +2,21 @@ import java.util.ArrayList;
 
 public class Dealer {
 
-    private Deck deck;
-    private ArrayList<Card> hand;
-
+    private Deck dealerDeck;
+    private Player player;
 
     public Dealer(Deck deck){
-        this.deck = deck;
-        this.hand = new ArrayList<>();
+        this.dealerDeck = deck;
     }
 
-    public void getCard(){
-        hand.add(this.deck.removeCard());
+    public Card dealCard(Player player) {
+//      shuffle deck and then deal one card from array deck
+        this.dealerDeck.shuffleDeck();
+        Card dealtCard = this.dealerDeck.removeCard();
+        player.receiveCard(dealtCard);
+        return dealtCard;
     }
 
-    public int cardsInHandCount(){
-        return this.hand.size();
-    }
 
-    public Card dealCard() {
-        return this.hand.remove(0);
-    }
+
 }

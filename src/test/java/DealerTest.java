@@ -24,7 +24,7 @@ public class DealerTest {
     @Test
 
     public void canDealCardToPlayer(){
-        dealer.dealCard();
+        dealer.dealCard(player);
         assertEquals(51, deck.getNumberOfCards());
         assertEquals(1, player.cardCount());
 
